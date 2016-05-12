@@ -1,7 +1,11 @@
 注意事项:
         1 index.py 需要有执行权限
         2 index.py所在目录有写权限
-        2 解释器为python3
+        3 解释器为python3
+支持模块:
+        os
+        pickle
+        getpass
 
 这是一个对账号操作的小程序,内容包括 注册 登陆 修改密码 错误锁定
 
