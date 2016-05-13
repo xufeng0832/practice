@@ -86,11 +86,14 @@ class Landing_interface(object):
 ss = Landing_interface()
 while True:
     a = input('''
+=====================================
+
     1 注册
     2 登陆
     3 修改密码
     q 退出
 
+=====================================
 
     请输入:''')
     os.system('clear')
