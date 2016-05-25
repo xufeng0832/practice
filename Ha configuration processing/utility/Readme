@@ -1,0 +1,32 @@
+注意事项:
+        1 index.py 需要有执行权限
+        2 index.py所在目录有写权限
+        3 解释器为python3
+        4 本程序只支持unix环境下执行
+需模块支持:
+        1 time
+        2 os
+        3 prettytable
+
+
+这是一个针对ha记录文件操作的小程序,入口文件index.py
+可供功能:
+        1 查看
+            查看节点及ha记录
+        2 添加
+            生成临时配置文件(更新临时配置文件)并添加用户输入新的节点或ha记录
+        3 删除节点或ha记录
+            生成临时配置文件(更新临时配置文件)并删除用户输入新的节点或ha记录
+        4 保存配置
+            如果在退出时选择保存配置文件则备份原配置文件,并且更新ha配置文件.
+            如果在退出时选择不保存配置文件则删除临时配置文件程序退出.
+
+
+注:
+    需在conf/conf.py中
+        HAPROXY = 'ha配置文件路径'
+
+博客地址:http://www.cnblogs.com/illn/articles/5525445.html
+        http://www.cnblogs.com/illn/p/5525513.html
+        http://www.cnblogs.com/illn/p/5525540.html
+
