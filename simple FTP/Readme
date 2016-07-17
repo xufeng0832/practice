@@ -1,0 +1,51 @@
+├── tesk_client
+│   ├── __init__.py
+│   ├── bin
+│   │   ├── Ftp_client.py      #客户端执行文件
+│   │   ├── __init__.py
+│   ├── conf
+│   │   └── __init__.py
+│   │   └── Ftpconf.py          #客户端配置文件
+│   ├── db
+│   │   └── __init__.py
+│   ├── log
+│   │   └── __init__.py
+│   └── modules
+│       ├── Client_correlation.py   #客户端模块
+│       ├── __init__.py
+│       └── utility.py              #公用模块
+├── tesk_server
+│   ├── __init__.py
+│   ├── bin
+│   │   ├── Ftp_Server.py           #服务端执行文件
+│   │   └── __init__.py
+│   ├── conf                        #配置文件
+│   │   └── __init__.py
+│   │   └── Ftpconf.py          #服务端配置文件
+│   ├── db                      #数据存放位置(家目录)
+│   │   ├── __init__.py
+│   ├── log
+│   │   └── __init__.py
+│   ├── modules
+│   │   ├── Server_correlation.py   #服务端模块
+│   │   ├── __init__.py
+│   │   └── utility.py              #服务端公用模块
+
+
+
+
+注意事项:
+        1、bin下所有文件需要有执行权限
+        2、db下所有目录需有写权限
+        3、解释器为python3
+
+命令:
+    cd 切换目录(可以cd   cd /xxx
+    ls 查看当前目录文件(ls    ls /xxx)
+    get 下载   (get xxx)
+    put 上传   (put xxx)
+
+
+tesk_client     是客户端
+tesk_server     是服务端
+
