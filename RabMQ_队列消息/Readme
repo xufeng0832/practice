@@ -1,0 +1,13 @@
+RPC_server.py
+RPC_client.py
+
+以上两文件为最终版被,以发布订阅方式实现.
+
+RabbitMQ_HOST       RabbitMQ服务器 IP 地址
+GROUP               定义组名(发布者以组为单位发送)
+WAY                 发送方式(fanout)
+HOSTNAME            定义客户端主机名,目前以队列名称实现区别(具体更改方法请见源码备注)
+TIME                定义服务端接收客户端返回的信息延迟时间
+COMMONS             执行的命令(linux)
+
+博客:http://www.cnblogs.com/illn/articles/5716900.html

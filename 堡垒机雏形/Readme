@@ -1,0 +1,38 @@
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+├── __init__.py
+├── bin                                 执行目录
+│   ├── __init__.py
+│   ├── install.py                      安装文件(初始化数据库)
+│   └── owl.py                          登陆执行
+├── config
+│   └── __init__.py
+├── db
+│   ├── __init__.py
+│   └── db_init_.py                     数据库表
+├── lib
+│   ├── __init__.py
+│   ├── sql_related.py                  数据库表操作相关
+│   └── utility.py                      (暂未使用)
+├── src
+│   ├── Admin.py                        管理员界面
+│   ├── Employess.py                    员工界面
+│   ├── Login_to_remote_host.py         登陆终端
+│   ├── Loging.py                       登陆
+│   ├── User_registered.py              (暂未使用)
+│   ├── __init__.py
+│   └── thred_pool.py                   (暂未使用)
+└── test.py
+
+
+
+需安装模块:  sqlalchemy
+           pymysql
+
+注意事项:在db/db_init_.py 文件第17行可修改数据库链接地址 账号 密码等
+        请在堡垒机注册账号,并把项目目录放到当前目录,且更改".profile"文件添加登陆启用 owl.py 及logout
+        如遇导入错误请修改5(4)行的-2 修改为-1
+        由于环境因素windos 方式登陆暂无测试
+
+博客:http://www.cnblogs.com/illn/articles/5720026.html
+    http://www.cnblogs.com/illn/articles/5742912.html

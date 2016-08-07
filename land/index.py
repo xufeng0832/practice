@@ -83,32 +83,34 @@ class Landing_interface(object):
                     os.system('clear')
                     print('\nInput error, please re-enter输入错误,请重新输入\n')
 
-ss = Landing_interface()
-while True:
-    a = input('''
-=====================================
+def Login():
+    ss = Landing_interface()
+    while True:
+        a = input('''
+    =====================================
 
-    1 注册
-    2 登陆
-    3 修改密码
-    q 退出
+        1 注册
+        2 登陆
+        3 修改密码
+        4 进入商城
+        q 退出
 
-=====================================
+    =====================================
 
-    请输入:''')
-    os.system('clear')
-    if a == '1':
-        if ss.register() == True:
-            print('\nAccount registration success(账号注册成功)\n')
-    elif a == '2':
-        user = ss.Login()
-        if user != False:
-            print('\nWelcome {0} landing(欢迎 {0} 登陆)\n'.format(user))
-    elif a == '3':
-        if ss.Change_Ps() == True:
-            print('\nPassword modification success(密码修成功)\n')
-    elif a == 'q':
-        print('\nEnd of program(程序结束)\n')
-        break
-    else:
-        print('\n请输入正确的选项\n')
+        请输入:''')
+        os.system('clear')
+        if a == '1':
+            if ss.register() == True:
+                print('\nAccount registration success(账号注册成功)\n')
+        elif a == '2':
+            user = ss.Login()
+            if user != False:
+                print('\nWelcome {0} landing(欢迎 {0} 登陆)\n'.format(user))
+        elif a == '3':
+            if ss.Change_Ps() == True:
+                print('\nPassword modification success(密码修成功)\n')
+        elif a == 'q':
+            print('\nEnd of program(程序结束)\n')
+            break
+        else:
+            print('\n请输入正确的选项\n')
